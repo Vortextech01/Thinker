@@ -58,7 +58,7 @@ export default function Home() {
               {
                 messages.length <= 0 && (
                   <div className="w-full flex items-center justify-center font-thin text-lg text-neutral-400">
-                    Ask GPT4 any question to get started
+                    SAPIENS IA LABORATORIES🧬. . . SYSTEM READY - QUANTUM DYNAMICAL INDEXING... READY. WAITING FOR MESSAGE_
                   </div>
                 )
               }
@@ -98,7 +98,7 @@ export default function Home() {
               <input
                 className="text-white w-full p-3 pl-5 pr-14 bg-transparent rounded-full border-[2px] border-white/5 hover:border-white/20 focus:border-blue-400 outline-0 transition-all duration-500"
                 value={input}
-                placeholder="Ask a question..."
+                placeholder="Escribe Aquí..."
                 onChange={handleInputChange}
               />
               <div
@@ -111,9 +111,9 @@ export default function Home() {
             <div className="w-full flex items-center justify-center">
               <a className="text-neutral-400 text-xs mt-2 hover:scale-110 transition-all duration-500 cursor-pointer"
                  onClick={() => {
-                   window.open("https://reworkd.ai/", "_blank");
+                   window.open("https://sapienslaboratories.com/", "_blank");
                  }}>
-                Made with ❤️ by Reworkd
+                Powered By Sapiens🧬IA
               </a>
             </div>
           </motion.div>
