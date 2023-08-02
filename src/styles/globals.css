@@ -1,45 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities; 
 
-:root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
+:root { 
+   --foreground-rgb: 0, 0, 0; 
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 0, 0, 0;
-        --background-end-rgb: 0, 0, 0;
-    }
-}
+@media (prefers-color-scheme: dark) { 
+   :root { 
+      --foreground-rgb: 255, 255, 255; 
+   } 
+} 
 
-body {
-    color: rgb(var(--foreground-rgb));
-    background: linear-gradient(
-            to bottom,
-            transparent,
-            rgb(var(--background-end-rgb))
-    ) rgb(var(--background-start-rgb));
-}
+body { 
+   color: rgb(var(--foreground-rgb)); 
+   background: url('https://raw.githubusercontent.com/Vortextech01/odyssey-theme/main/theme/public/4C98FF79-28CB-40F3-ADCB-A54903177097.jpeg'); 
+   background-size: cover; 
+   background-repeat: no-repeat;
+} 
 
-/* Customize website's scrollbar like Mac OS
-Not supports in Firefox and IE */
-/* total width */
-*::-webkit-scrollbar {
-    border-radius: 10px;
-    background-color: #464649;
-    width: 8px;
-}
+/* Customize website's scrollbar like Mac OS Not supports in Firefox and IE */ 
 
-/* scrollbar itself */
-*::-webkit-scrollbar-thumb {
-    @apply rounded-lg ;
-}
+/* total width */ 
+*::-webkit-scrollbar { 
+   border-radius: 10px; 
+   background-color: #464649; 
+   width: 8px; 
+} 
 
-/* set button(top and bottom of the scrollbar) */
-*::-webkit-scrollbar-button {
-    display: none;
+/* scrollbar itself */ 
+*::-webkit-scrollbar-thumb { 
+   @apply rounded-lg ; 
+} 
+
+/* set button(top and bottom of the scrollbar) */ 
+*::-webkit-scrollbar-button { 
+   display: none; 
 }
