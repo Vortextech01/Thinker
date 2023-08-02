@@ -51,7 +51,7 @@ export default function Home() {
 
       <div 
         style={{ 
-          backgroundImage: 'url("https://raw.githubusercontent.com/Vortextech01/odyssey-theme/main/theme/public/4C98FF79-28CB-40F3-ADCB-A54903177097.jpeg")',
+          backgroundImage: 'url("https://raw.githubusercontent.com/Vortextech01/odyssey-theme/main/theme/public/CA0A5B10-0D27-4D90-9D02-A456CC93B04C.jpeg")',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat'
         }} 
