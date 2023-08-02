@@ -49,9 +49,17 @@ export default function Home() {
       </Head>
       <Analytics />
 
-      <div className="bg-zinc-900 h-[100svh] w-screen flex items-center justify-center font-sans">
+      <div 
+        style={{ 
+          backgroundImage: 'url("https://raw.githubusercontent.com/Vortextech01/odyssey-theme/main/theme/public/4C98FF79-28CB-40F3-ADCB-A54903177097.jpeg")',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }} 
+        className="h-[100vh] w-screen flex items-center justify-center font-sans"
+      >
         <div
-          className="max-w-screen-md flex-1 flex flex-col h-[100svh] items-center p-5 sm:p-7 gap-5 sm:gap-7 overflow-hidden">
+          className="max-w-screen-md flex-1 flex flex-col h-[100vh] items-center p-5 sm:p-7 gap-5 sm:gap-7 overflow-hidden"
+        >
           <div className="flex-1 w-full overflow-auto">
             <motion.div initial={{ y: -30, opacity: 0 }} animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 2, delay: 0.5 }}>
