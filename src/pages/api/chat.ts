@@ -3,7 +3,8 @@ import { Configuration, OpenAIApi } from 'openai-edge'
 
 // Create an OpenAI API client (that's edge friendly!)
 const config = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY
+  apiKey: process.env.OPENAI_API_KEY || '',
+  baseURL: 'https://api.fireworks.ai/inference/v1'
 })
 const openai = new OpenAIApi(config)
 
@@ -25,7 +26,7 @@ export default async function POST(req: Request) {
 
   // Ask OpenAI for a streaming chat completion given the prompt
   const response = await openai.createChatCompletion({
-    model: 'gpt-4',
+    model: 'accounts/fireworks/models/llama-v2-70b-chat',
     stream: true,
     messages
   })
