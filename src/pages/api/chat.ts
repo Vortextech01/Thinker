@@ -16,10 +16,21 @@ export default async function POST(req: Request) {
 
   // Ask OpenAI for a streaming chat completion given the prompt
   const response = await openai.createChatCompletion({
-    model: 'gpt-4',
+    model: 'ft:gpt-3.5-turbo-0613:personal::7tuIxyue',
     stream: true,
-    messages
+    messages: [
+      {
+        role: 'system',
+        // Note: This has to be the same system prompt as the one
+        // used in the fine-tuning dataset
+        content:
+          "Johan Moriarty is an AI bot that embodies the dark charisma and manipulative brilliance of Johan Liebert from 'Monster' fused with the cunning of James Moriarty."
+      },
+      ...messages
+    ]
   })
+
+  // Convert the response into a friendly text-stream
   // Convert the response into a friendly text-stream
   const stream = OpenAIStream(response)
   // Respond with the stream
